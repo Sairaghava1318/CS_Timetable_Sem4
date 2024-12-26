@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Class Time Table</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .timetable-container {
+            max-width: 100%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 24px; 
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px; 
+        }
+        th {
+            background-color: #004085;
+            color: #ffffff;
+        }
+        td {
+            background-color: #fef9e7;
+            transition: background-color 0.3s ease;
+        }
+        tr:hover td {
+            background-color: #d0e4f7;
+        }
+        .editable {
+            background-color: #F9F5E9;
+            cursor: pointer;
+        }
+        .lunch {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            background-color: #f7f9f9;
+            font-weight: bold;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        tr td {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="timetable-container">
+        <h1>Course Class Time Table and Room#</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>PERIOD/DAY</th>
+                    <th>08:00 hr<br>08:55 hr</th>
+                    <th>09:00 hr<br>09:55 hr</th>
+                    <th>10:00 hr<br>10:55 hr</th>
+                    <th>11:05 hr<br>12:00 hr</th>
+                    <th>12:00 hr<br>13:15 hr</th>
+                    <th>13:15 hr<br>14:10 hr</th>
+                    <th>14:15 hr<br>15:10 hr</th>
+                    <th>15:15 hr<br>16:10 hr</th>
+                    <th>16:20 hr<br>17:15 hr</th>
+                    <th>17:15 hr<br>18:20 hr</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MONDAY</td>
+                    <td class="editable">DE</td>
+                    <td class="editable">ML</td>
+                    <td class="editable">COA</td>
+                    <td class="editable">HS</td>
+                    <td class="lunch" rowspan="5">LUNCH</td>
+                    <td class="editable">-</td>
+                    <td class="editable">AI/ML Lab</td>
+                    <td class="editable">AI/ML Lab</td>
+                    <td class="editable">-</td>
+                    <td class="editable">OOPS</td>
+                </tr>
+                <tr>
+                    <td>TUESDAY</td>
+                    <td class="editable">ML</td>
+                    <td class="editable">COA</td>
+                    <td class="editable">DAA</td>
+                    <td class="editable">HS</td>
+                    <td class="editable">-</td>
+                    <td class="editable">Hs Lab</td>
+                    <td class="editable">Hs Lab</td>
+                    <td class="editable">-</td>
+                    <td class="editable">-</td>
+                </tr>
+                <tr>
+                    <td>WEDNESDAY</td>
+                    <td class="editable">-</td>
+                    <td class="editable">COA Lab</td>
+                    <td class="editable">COA Lab</td>
+                    <td class="editable">COA Lab</td>
+                    <td class="editable">-</td>
+                    <td class="editable">DAA Lab</td>
+                    <td class="editable">DAA Lab</td>
+                    <td class="editable">DAA Lab</td>
+                    <td class="editable">OOPS</td>
+                </tr>
+                <tr>
+                    <td>THURSDAY</td>
+                    <td class="editable">COA</td>
+                    <td class="editable">DAA</td>
+                    <td class="editable">DE</td>
+                    <td class="editable">-</td>
+                    <td class="editable">-</td>
+                    <td class="editable">-</td>
+                    <td class="editable">-</td>
+                    <td class="editable">-</td>
+                    <td class="editable">-</td>
+                </tr>
+                <tr>
+                    <td>FRIDAY</td>
+                    <td class="editable">DAA</td>
+                    <td class="editable">DE</td>
+                    <td class="editable">ML</td>
+                    <td class="editable">HS</td>
+                    <td class="editable">DE Lab</td>
+                    <td class="editable">DE Lab</td>
+                    <td class="editable">DE Lab</td>
+                    <td class="editable">-</td>
+                    <td class="editable">OOPS</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
